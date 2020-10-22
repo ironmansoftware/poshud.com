@@ -1,15 +1,8 @@
-param($dockerpwd, [Switch]$Preview)
+param($dockerpwd = $Env:dockerpassword)
 
 $TagNames = @()
 $Version = (Get-Content "$PSScriptRoot/version.txt" -Raw).Trim()
-if ($Preview)
-{
-    $TagNames = @("ironmansoftware/universal-demo:preview")
-}
-else 
-{
-    $TagNames = @("ironmansoftware/universal-demo:latest", "ironmansoftware/universal-demo:$Version")
-}
+$TagNames = @("ironmansoftware/universal-demo:latest", "ironmansoftware/universal-demo:$Version")
 
 docker login -u adamdriscoll -p $dockerpwd
 
