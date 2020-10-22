@@ -218,8 +218,17 @@ $Pages += New-UDPage @AdditionalParameters -Name "PowerShell Universal" -Navigat
         New-UDGrid -Container -Content {
             New-UDGrid -Item -SmallSize 6 -Content {
                 New-UDCard -Title "Admin Console" -Content {
-                    New-UDTypography -Text "Check out the admin console for Universal" -Paragraph
-                    New-UDButton -Variant outlined -Text "View Now" -OnClick { Invoke-UDRedirect -Url "/admin" -OpenInNewWindow }
+                    New-UDTypography -Text "Check out the admin console for Universal. Login with Admin and any password. " -Paragraph
+                    New-UDButton -Variant outlined -Text "View Now" -OnClick { Invoke-UDRedirect -Url "https://demo.ironmansoftware.com/admin" -OpenInNewWindow }
+                }
+            }
+        }
+
+        New-UDGrid -Container -Content {
+            New-UDGrid -Item -SmallSize 6 -Content {
+                New-UDCard -Title "Source" -Content {
+                    New-UDTypography -Text "Check out the sourec for this Universal instance." -Paragraph
+                    New-UDButton -Variant outlined -Text "View Now" -OnClick { Invoke-UDRedirect -Url "https://github.com/ironmansoftware/poshud.com" -OpenInNewWindow }
                 }
             }
         }
