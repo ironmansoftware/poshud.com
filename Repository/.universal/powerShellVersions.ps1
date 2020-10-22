@@ -1,0 +1,1 @@
+New-PSUPowerShellVersion -Version "7.0.2" -Path "C:\Program Files\PowerShell\7\pwsh.exe" 

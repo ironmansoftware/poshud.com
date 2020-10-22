@@ -1,0 +1,2 @@
+New-PSUDashboardFramework -Name "UniversalDashboard" -Path "C:\ProgramData\PowerShellUniversal\Dashboard\Frameworks\UniversalDashboard\2.9.6" -Version "2.9.6" 
+New-PSUDashboardFramework -Name "UniversalDashboard" -Path "C:\ProgramData\PowerShellUniversal\Dashboard\Frameworks\UniversalDashboard\3.1.3" -Version "3.1.3"
